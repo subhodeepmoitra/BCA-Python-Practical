@@ -28,7 +28,7 @@ def noSimilarElement(list):
     return noSimilarEle
 
 def In(element, list):
-    # checks for common elements in the list
+    # checks for common elements in the list noSimilarEle
     flag = 0
     for i in range(len(list)):
         if element == list[i]:
