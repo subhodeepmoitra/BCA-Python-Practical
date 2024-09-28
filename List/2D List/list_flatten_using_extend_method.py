@@ -1,0 +1,23 @@
+def flattenExtend(data):
+    flat = []
+
+    for rows in data: # for iterating among the main list data
+        flat.extend(rows)
+    
+    return flat
+
+# Driver code
+"""data = [[1, 2, 3],
+        ['A', 'B', 'C'],
+        ['x-ray', 'uv-ray', 'ir-ray']]"""
+data = [[1,2,3,10],
+        [4,5,6,40],
+        [7,8,9,70],]
+
+print("The original data is:")
+for rows in data:
+    for items in rows:
+        print(items, "", end="")
+    print()
+
+print(f"The flattened list is: {flattenExtend(data)}")
