@@ -1,9 +1,9 @@
-def sortDictionary(data):
+def sortDictionary(data): #Bubble sort
     keys = list(data.keys())
     n = len(keys)
     for i in range(n):
         for j in range(0, n-i-1):
-            if keys[j] > keys[j+1]:
+            if keys[j] > keys[j+1]: #lexicographically comparing the keys similar to the way words are arranged in a dictionary
                keys[j], keys[j+1] = keys[j+1], keys[j]
     sorted_dictionary = {key: data[key] for key in keys}
     return sorted_dictionary
